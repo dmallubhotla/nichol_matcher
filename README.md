@@ -24,9 +24,20 @@ Relative paths mean running from there is necessary.
 Flags within `match_z_fewer` control the number of Monte Carlo simulation steps, which can be useful.
 If your CPU usage stays low, then python likely cannot acquire memory and the calculation will hang.
 
-The output file is an array of numpy arrays.
-Each output numpy array is a list of lists of 7 elements.
+The output file is a list of configurations of dipoles.
+Each line represents a single configuration of dipoles that generates a spectrum compatible with data in the paper.
+Within each line, each child element represents a single dipole as 7 elements.
+The 7 elements are, respectively
+1. $p_x$, the dipole moment in the x direction, in units that absorb all prefactors
+2. $p_y$
+3. $p_z$
+4. $s_x$, the dipole position in the x direction, in units of 10 nanometre
+5. $s_y$
+6. $s_z$
+7. $w$, the dipole relaxation rate, in Hz
 
+The dipole moment units are such that $S \propto \vec{p} \dot \vec{s}$ etc.
+Note that the qubit is set to be at the origin in the Nichol paper.
 
 ## References
 - Connors, E.J., Nelson, J., Edge, L.F. et al. Charge-noise spectroscopy of Si/SiGe quantum dots via dynamically-decoupled exchange oscillations. Nat Commun 13, 940 (2022). https://doi.org/10.1038/s41467-022-28519-x
