@@ -9,7 +9,7 @@ The data is first scaled up by a factor of $10^14.
 This changes the units to make the scale centred around 1.
 Then, the data is binned in log-space, and each bin is represented by its log-space mean.
 Additionally, for each bin the points three standard deviations below and above the mean are computed as well.
-Each row in `processedNicholData.csv` represents a bin, with the four columns being $f$, $\left<S\right>$, $\left<S\right> - 3\sigma$ and $\left<S\right> + 3\sigma$.
+Each row in `processedNicholData.csv` represents a bin, with the four columns being $f$, $<S(f)>$, $<S> - 3\sigma$ and $<S> + 3\sigma$.
 
 `frequency_inputs.txt` contains a text file with just the frequency inputs for each of the bins.
 This is redundant and is just for convenience with `pdme`'s somewhat odd API.
