@@ -36,7 +36,7 @@ The 7 elements are, respectively
 6. $s_z$
 7. $w$, the dipole relaxation rate, in Hz
 
-The dipole moment units are such that $S \propto \vec{p} \cdot s$ etc.
+The dipole moment units are such that $S \propto \vec{p} \cdot \vec{s}$ etc.
 Note that the qubit is set to be at the origin in the Nichol paper.
 
 ## References
